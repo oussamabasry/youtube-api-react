@@ -31,6 +31,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="ui container">
+                <h1 style={{marginTop: '20px', color:'red'}}>Youtube Api</h1>
                 <SearchBar onFormSubmit={this.OnTermSubmit} />
                 <VideoDetail video={this.state.selectedVideo} />
                 <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect} />
