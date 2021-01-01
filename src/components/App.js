@@ -32,6 +32,7 @@ class App extends React.Component {
         return (
             <div className="ui container">
                 <h1 style={{marginTop: '20px', color:'red'}}>Youtube Api</h1>
+                <a href="https://github.com/oussamabasry/Using-Youtube-API-in-react-project">Github repository</a>
                 <SearchBar onFormSubmit={this.OnTermSubmit} />
                 <VideoDetail video={this.state.selectedVideo} />
                 <VideoList videos={this.state.videos} onVideoSelect={this.onVideoSelect} />
